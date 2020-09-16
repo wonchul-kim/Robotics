@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- launch file parameters -->
+  <arg name="paused"      default="false"/>
+  <arg name="debug"       default="false"/>
+  <arg name="gui"         default="true"/>
+
+  
+  <!-- startup simulated world -->
+  <include file="$(find ur_gazebo)/launch/ur3_camera.launch">
+    <arg name="world_name"  value="$(find ur_gazebo)/worlds/cubes_task.world"/>
+    <arg name="limited" value="true"/>
+    <arg name="paused"      value="$(arg paused)"/>
+    <arg name="debug"       value="$(arg debug)"/>
+    <arg name="gui"         value="$(arg gui)"/>
+  </include>
+  
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/wonchul/catkin_ws/install
+
+Name: ddpg_ur3
+Description: Description of ddpg_ur3
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wonchul/catkin_ws/install/lib 
+Requires: message_generation message_runtime std_msgs

@@ -1,0 +1,4 @@
+function arrObj = InitializeArrRotor()
+%
+%
+arrObj = [];
